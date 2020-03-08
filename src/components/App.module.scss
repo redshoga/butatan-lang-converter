@@ -1,0 +1,30 @@
+@import "~normalize.css";
+
+body {
+  color: #333;
+  padding: 8px;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  resize: vertical;
+}
