@@ -12,6 +12,7 @@ export class App extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.clickButton = this.clickButton.bind(this);
+    this.openTweet = this.openTweet.bind(this);
   }
 
   handleChange(event) {
@@ -20,6 +21,13 @@ export class App extends React.Component {
 
   clickButton(event) {
     this.setState({ butatan: convertToButatanLang(this.state.japanese) });
+  }
+
+  openTweet() {
+    window.open(
+      `https://twitter.com/intent/tweet?text=${this.state.butatan}`,
+      "_blank"
+    );
   }
 
   render() {
@@ -33,10 +41,17 @@ export class App extends React.Component {
             value={this.state.japanese}
             onChange={this.handleChange}
           />
-          <button onClick={this.clickButton} className={styles.button}>
+          <button onClick={this.clickButton} className={styles.convertButton}>
             ぶたたん語に変換↓
           </button>
-          <textarea className={styles.textarea} value={this.state.butatan} />
+          <textarea
+            readOnly
+            className={styles.textarea}
+            value={this.state.butatan}
+          />
+          <button onClick={this.openTweet} className={styles.tweetButton}>
+            とぅいーと
+          </button>
         </main>
         <p>
           <a href="https://github.com/redshoga/butatan-lang-converter">

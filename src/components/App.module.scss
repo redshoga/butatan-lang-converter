@@ -16,15 +16,27 @@ body {
   }
 }
 
-.button {
+.convertButton,
+.tweetButton {
   width: 100%;
   margin: 8px 0;
   padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.tweetButton {
+  background-color: #38a1f3;
+  color: white;
+  font-weight: bold;
 }
 
 .textarea {
   box-sizing: border-box;
+  height: 100px;
   width: 100%;
   display: block;
   resize: vertical;
+  border-radius: 8px;
+  padding: 8px;
 }
