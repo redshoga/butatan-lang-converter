@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/butatan-lang-converter/static/css/main.42b9ca2b.chunk.css",
+    "main.js": "/butatan-lang-converter/static/js/main.b2788533.chunk.js",
+    "main.js.map": "/butatan-lang-converter/static/js/main.b2788533.chunk.js.map",
+    "runtime-main.js": "/butatan-lang-converter/static/js/runtime-main.1c9ef0d1.js",
+    "runtime-main.js.map": "/butatan-lang-converter/static/js/runtime-main.1c9ef0d1.js.map",
+    "static/js/2.a59fe167.chunk.js": "/butatan-lang-converter/static/js/2.a59fe167.chunk.js",
+    "static/js/2.a59fe167.chunk.js.map": "/butatan-lang-converter/static/js/2.a59fe167.chunk.js.map",
+    "index.html": "/butatan-lang-converter/index.html",
+    "precache-manifest.3d79a9af329e25db5cc9e03d82219789.js": "/butatan-lang-converter/precache-manifest.3d79a9af329e25db5cc9e03d82219789.js",
+    "service-worker.js": "/butatan-lang-converter/service-worker.js",
+    "static/css/main.42b9ca2b.chunk.css.map": "/butatan-lang-converter/static/css/main.42b9ca2b.chunk.css.map",
+    "static/js/2.a59fe167.chunk.js.LICENSE.txt": "/butatan-lang-converter/static/js/2.a59fe167.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c9ef0d1.js",
+    "static/js/2.a59fe167.chunk.js",
+    "static/css/main.42b9ca2b.chunk.css",
+    "static/js/main.b2788533.chunk.js"
+  ]
+}
