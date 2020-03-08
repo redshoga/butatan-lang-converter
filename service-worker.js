@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/butatan-lang-converter/precache-manifest.3d79a9af329e25db5cc9e03d82219789.js"
+  "/butatan-lang-converter/precache-manifest.fc311ce3b4977a4622020d498f824c61.js"
 );
 
 self.addEventListener('message', (event) => {
