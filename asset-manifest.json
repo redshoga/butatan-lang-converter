@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/butatan-lang-converter/static/css/main.c229fdd4.chunk.css",
-    "main.js": "/butatan-lang-converter/static/js/main.432b4da7.chunk.js",
-    "main.js.map": "/butatan-lang-converter/static/js/main.432b4da7.chunk.js.map",
+    "main.js": "/butatan-lang-converter/static/js/main.489677ca.chunk.js",
+    "main.js.map": "/butatan-lang-converter/static/js/main.489677ca.chunk.js.map",
     "runtime-main.js": "/butatan-lang-converter/static/js/runtime-main.1c9ef0d1.js",
     "runtime-main.js.map": "/butatan-lang-converter/static/js/runtime-main.1c9ef0d1.js.map",
     "static/js/2.a59fe167.chunk.js": "/butatan-lang-converter/static/js/2.a59fe167.chunk.js",
     "static/js/2.a59fe167.chunk.js.map": "/butatan-lang-converter/static/js/2.a59fe167.chunk.js.map",
     "index.html": "/butatan-lang-converter/index.html",
-    "precache-manifest.fc311ce3b4977a4622020d498f824c61.js": "/butatan-lang-converter/precache-manifest.fc311ce3b4977a4622020d498f824c61.js",
+    "precache-manifest.16d363d57dc3ba88c991ffc1047107e0.js": "/butatan-lang-converter/precache-manifest.16d363d57dc3ba88c991ffc1047107e0.js",
     "service-worker.js": "/butatan-lang-converter/service-worker.js",
     "static/css/main.c229fdd4.chunk.css.map": "/butatan-lang-converter/static/css/main.c229fdd4.chunk.css.map",
     "static/js/2.a59fe167.chunk.js.LICENSE.txt": "/butatan-lang-converter/static/js/2.a59fe167.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1c9ef0d1.js",
     "static/js/2.a59fe167.chunk.js",
     "static/css/main.c229fdd4.chunk.css",
-    "static/js/main.432b4da7.chunk.js"
+    "static/js/main.489677ca.chunk.js"
   ]
 }
