@@ -2,7 +2,7 @@
 
 日本語をぶたたん語に変える変換機。上級編対応。
 
-参考: [たたん語講座再生リスト](https://www.youtube.com/playlist?list=PLUhY1T-ZI4tJCOP47W6g43mdBnavvRfVN)
+参考: [ぶたたん語講座再生リスト](https://www.youtube.com/playlist?list=PLUhY1T-ZI4tJCOP47W6g43mdBnavvRfVN)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
