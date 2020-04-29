@@ -2,6 +2,8 @@
 
 日本語をぶたたん語に変える変換機。上級編対応。
 
+ぶたたん語変換機: https://redshoga.github.io/butatan-lang-converter/
+
 参考: [ぶたたん語講座再生リスト](https://www.youtube.com/playlist?list=PLUhY1T-ZI4tJCOP47W6g43mdBnavvRfVN)
 
 
