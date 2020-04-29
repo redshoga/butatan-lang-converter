@@ -4,6 +4,15 @@
 
 参考: [ぶたたん語講座再生リスト](https://www.youtube.com/playlist?list=PLUhY1T-ZI4tJCOP47W6g43mdBnavvRfVN)
 
+
+## 変換ロジック
+
+日本語→ぶたたん語を機械的に扱うために以下の処理手順を踏む。
+
+![ぶたたん語変換表](https://user-images.githubusercontent.com/33852683/80601648-0c40e480-8a69-11ea-99c9-fd1911115bbf.png)
+
+# About CRA (Create React App)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
