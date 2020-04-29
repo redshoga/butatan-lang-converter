@@ -1,10 +1,13 @@
 // https://qiita.com/mimoe/items/855c112625d39b066c9a
-const hiraToKana = str =>
-  str.replace(/[\u3041-\u3096]/g, function(match) {
+const hiraToKana = (str) =>
+  str.replace(/[\u3041-\u3096]/g, function (match) {
     var chr = match.charCodeAt(0) + 0x60;
     return String.fromCharCode(chr);
   });
 
+// target内部の
+// ひらがなの文字列aをひらがなの文字列bに置き換える
+// カタカナにした文字列aをカタカナにした文字列bに置き換える
 const replace = (target, a, b) => {
   let retStr = target;
   retStr = retStr.replace(new RegExp(a, "gm"), b, "gm");
@@ -12,30 +15,46 @@ const replace = (target, a, b) => {
   return retStr;
 };
 
-export const convertToButatanLang = japanese => {
+export const convertToButatanLang = (japanese) => {
   const convertTableList = [
-    // ちゃ行変換
+    // ゃ行変換
     [
+      ["きゃ", "か"],
+      ["きゅ", "く"],
+      ["きょ", "こ"],
+      ["ぎゃ", "が"],
+      ["ぎゅ", "ぐ"],
+      ["ぎょ", "ご"],
+      ["しゃ", "さ"],
+      ["しゅ", "す"],
+      ["しょ", "そ"],
+      ["じゃ", "ざ"],
+      ["じゅ", "ず"],
+      ["じょ", "ぞ"],
       ["ちゃ", "た"],
       ["ちゅ", "つ"],
-      ["ちょ", "と"]
-    ],
-    // 母音のiをeに
-    [
-      ["い", "え"],
-      ["き", "け"],
-      ["し", "せ"],
-      ["ち", "て"],
-      ["に", "ね"],
-      ["ひ", "へ"],
-      ["み", "め"],
-      ["り", "れ"],
-      // 濁音, 半濁音
-      ["ぎ", "げ"],
-      ["じ", "ぜ"],
-      ["ぢ", "で"],
-      ["び", "べ"],
-      ["ぴ", "ぺ"]
+      ["ちょ", "と"],
+      ["ぢゃ", "だ"],
+      ["ぢゅ", "づ"],
+      ["ぢょ", "ど"],
+      ["にゃ", "な"],
+      ["にゅ", "ぬ"],
+      ["にょ", "の"],
+      ["ひゃ", "は"],
+      ["ひゅ", "ふ"],
+      ["ひょ", "ほ"],
+      ["びゃ", "ば"],
+      ["びゅ", "ぶ"],
+      ["びょ", "ぼ"],
+      ["ぴゃ", "ぱ"],
+      ["ぴゅ", "ぷ"],
+      ["ぴょ", "ぽ"],
+      ["みゃ", "ま"],
+      ["みゅ", "む"],
+      ["みょ", "も"],
+      ["りゃ", "ら"],
+      ["りゅ", "る"],
+      ["りょ", "ろ"],
     ],
     // さ行変換
     [
@@ -48,7 +67,37 @@ export const convertToButatanLang = japanese => {
       ["じ", "ぢ"],
       ["ず", "づ"],
       ["ぜ", "で"],
-      ["ぞ", "ど"]
+      ["ぞ", "ど"],
+    ],
+    // や行変換
+    [
+      ["や", "あ"],
+      ["ゆ", "う"],
+      ["よ", "お"],
+    ],
+    // ら行変換
+    [
+      ["ら", "あ"],
+      ["り", "い"],
+      ["る", "う"],
+      ["れ", "え"],
+      ["ろ", "お"],
+    ],
+    // 母音のiをeに (た行を除く)
+    [
+      ["い", "え"],
+      ["き", "け"],
+      ["し", "せ"],
+      // ["ち", "て"],
+      ["に", "ね"],
+      ["ひ", "へ"],
+      ["み", "め"],
+      ["り", "れ"],
+      ["ぎ", "げ"],
+      ["じ", "ぜ"],
+      ["ぢ", "で"],
+      ["び", "べ"],
+      ["ぴ", "ぺ"],
     ],
     // た行変換
     [
@@ -59,23 +108,18 @@ export const convertToButatanLang = japanese => {
       // ["と", "と"],
       // ["だ", "だ"],
       ["ぢ", "でぃ"],
-      ["づ", "どぅ"]
+      ["づ", "どぅ"],
       // ["で", "で],
       // ["ど", "ど"],
     ],
-    // ぃ対応
-    [["ぃ", ""]]
   ];
 
   let retStr = japanese;
-  convertTableList.forEach(convertTable => {
-    convertTable.forEach(convertRow => {
+  convertTableList.forEach((convertTable) => {
+    convertTable.forEach((convertRow) => {
       retStr = replace(retStr, convertRow[0], convertRow[1]);
     });
   });
-
-  // 特別対応
-  retStr = replace(retStr, "ぺんく", "ぴんく");
 
   return retStr;
 };

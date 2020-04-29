@@ -1,8 +1,8 @@
 # butatan-lang-converter
 
-日本語をぶたたん語に変える変換機。
+日本語をぶたたん語に変える変換機。上級編対応。
 
-参考: [誰でもわかる！「ぶたたん語講座」 - YouTube](https://www.youtube.com/watch?v=R0lkT2iUR2s)
+参考: [たたん語講座再生リスト](https://www.youtube.com/playlist?list=PLUhY1T-ZI4tJCOP47W6g43mdBnavvRfVN)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

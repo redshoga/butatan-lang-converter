@@ -7,7 +7,7 @@ export class App extends React.Component {
     super(props);
     this.state = {
       japanese: "ぴんくのぶたです",
-      butatan: "ぴんくのぶたでとぅ"
+      butatan: "ぺんくのぶたでとぅ",
     };
 
     this.handleChange = this.handleChange.bind(this);
